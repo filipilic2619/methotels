@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+
+    </head>
+<body>
+
+<script>
+    $(document).ready(function () {
+        $("#dot1").click(function () {
+            $('#bg').fadeTo('normal', 0.1, function () {
+                $(this).css('background-image', 'url(../images/slika.jpg)');
+            }).fadeTo('normal', 1);
+            $("#dot1").attr('class', 'dot1');
+            $("#dot2").attr('class', 'dot');
+            $("#dot3").attr('class', 'dot');
+        });
+        $("#dot2").click(function () {
+
+            $('#bg').fadeTo('normal', 0.1, function () {
+                $(this).css('background-image', 'url(../images/slika1.jpg)');
+            }).fadeTo('normal', 1);
+            $("#dot1").attr('class', 'dot');
+            $("#dot2").attr('class', 'dot1');
+            $("#dot3").attr('class', 'dot');
+
+        });
+        $("#dot3").click(function () {
+            $('#bg').fadeTo('normal', 0.1, function () {
+                $(this).css('background-image', 'url(../images/slika2.jpg)');
+            }).fadeTo('normal', 1);
+            $("#dot1").attr('class', 'dot');
+            $("#dot2").attr('class', 'dot');
+            $("#dot3").attr('class', 'dot1');
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.backtotop').fadeIn();
+            } else {
+                $('.backtotop').fadeOut();
+            }
+        });
+
+        $('.backtotop').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        });
+    });
+</script>
+
+
+
+<div class="header">
+
+
+    <div class="container">
+        <a href="index.html" id="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+
+        <div class="navigation">
+            <ul class="menu">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">Menu</a></li>
+                <li class="item"><a href="">Menu</a></li>
+                <li class="item"><a href="">Menu</a></li>
+                <li class="item"><a href="">Menu</a></li>
+                <li class="item"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="bigimage" id="bg">
+    <div class="dots">
+        <div class="dot1" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+    </div>
+
+</div>
+
+<div class="section1">
+    <div class="container">
+        <div class="sub" id="first">
+            <img src="images/small.jpg" alt="" class="smallimage">
+            <h4 class="title1">LOREM IPSUM DOLOR</h4>
+            <h5 class="text1">Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+                semper libero, sit.</h5>
+            <button class="readmore">Read more</button>
+        </div>
+
+        <div class="sub" id="second">
+            <img src="images/small.jpg" alt="" class="smallimage">
+            <h4 class="title1">DONEC QUAM FELIS</h4>
+            <h5 class="text1">Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+                semper libero, sit.</h5>
+            <button class="readmore">Read more</button>
+        </div>
+
+        <div class="sub" id="third">
+            <img src="images/small.jpg" alt="" class="smallimage">
+            <h4 class="title1">PHASELLUS VIVERRA NULLA</h4>
+            <h5 class="text1">Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+                semper libero, sit.</h5>
+            <button class="readmore">Read more</button>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="section2">
+
+    <div class="sub2" id="medium1"></div>
+    <div class="sub21" id="medium1text">
+        <h1>Title</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</h2>
+        <button class="readmore">Read more</button>
+    </div>
+    <div class="sub2" id="medium2"></div>
+    <div class="sub21" id="medium2text">
+        <h1>Title</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</h2>
+        <button class="readmore">Read more</button>
+    </div>
+    <div class="sub2" id="medium3"></div>
+    <div class="sub21" id="medium3text">
+        <h1>Title</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</h2>
+        <button class="readmore">Read more</button>
+    </div>
+    <div class="sub2" id="medium4"></div>
+    <div class="sub21" id="medium4text">
+        <h1>Title</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</h2>
+        <button class="readmore">Read more</button>
+    </div>
+</div>
+
+<div class="bigtitle">
+    <div class="container">
+        <div class="line"></div>
+        <h4>Big title</h4>
+        <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem.</h5>
+    </div>
+</div>
+
+<div class="section3">
+    <div class="container">
+        <div class="sub3">
+            <i class="fa Example of envelope-open-o fa-envelope-open-o" aria-hidden="true"></i>
+            <h5>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+                leo ligula, porttitor eu, consequat vitae, eleifend.</h5>
+
+        </div>
+        <div class="sub3">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <h5>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+                leo ligula, porttitor eu, consequat vitae, eleifend.</h5>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="social">
+            <img src="images/facebook.png" alt="" class="icons">
+            <img src="images/youtube.png" alt="" class="icons">
+            <img src="images/linkedin.png" alt="" class="icons">
+            <img src="images/google.png" alt="" class="icons">
+            <img src="images/twitter.png" alt="" class="icons">
+        </div>
+
+        <div class="subfooter">
+            <h4 class="title1">Sitemap</h4>
+            <h5 class="footertext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa. Cum sociis nato.</h5>
+
+        </div>
+        <div class="subfooter">
+            <h4 class="title1">Contact us</h4>
+            <h5 class="footertext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa. Cum sociis nato.</h5>
+        </div>
+        <div class="subfooter">
+            <h4 class="title1">About us</h4>
+            <h5 class="footertext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                dolor. Aenean massa. Cum sociis nato.</h5>
+        </div>
+        <div class="sign">© 2017. Filip Ilić</div>
+
+
+    </div>
+
+</div>
+
+<a class="backtotop">Back</a>
+</body>
+</html>
