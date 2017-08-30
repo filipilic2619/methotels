@@ -493,4 +493,70 @@ body {
     text-indent: -9999px;
 }
 
+#forma {
+    display: block;
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    color: #ecf0f1;
+}
 
+#prijava {
+	text-align: center;
+    color: #ecf0f1;
+}
+
+
+#loginf {
+
+    position: absolute;
+    display: block;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(7, 17, 27, 0.85);
+
+
+
+}
+
+#username, #password, #ime {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 8px 8px 8px 8px;
+    color: black;
+    background-color: rgba(236, 240, 241, 0.72);
+    border: none;
+    border-radius: 2px;
+    font-size: 12pt;
+    font-weight: bold;
+
+}
+
+#slika {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/login.jpg);
+
+}
+
+#prijava12 {
+    width: 100%;
+    margin-left: 0px;
+}
+
+#neispravni {
+    display: none;
+    color: red;
+    font-size: 10pt;
+    text-align: right;
+    margin-top: -5px;
+
+}
